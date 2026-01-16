@@ -35,6 +35,7 @@
 .tox
 .vimrc
 .vscode
+.worktrees
 aiohttp/_find_header.c
 aiohttp/_headers.html
 aiohttp/_headers.pxi
