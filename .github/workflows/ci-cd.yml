@@ -3,11 +3,27 @@ name: CI
 on:
   merge_group:
   push:
+    paths:
+      - '**/*.py'
+      - 'pyproject.toml'
+      - 'setup.cfg'
+      - 'setup.py'
+      - '.pre-commit-config.yaml'
+      - 'tests/**'
+      - '.github/workflows/ci-cd.yml'
     branches:
       - 'master'
       - '[0-9].[0-9]+'  # matches to backport branches, e.g. 3.6
     tags: [ 'v*' ]
   pull_request:
+    paths:
+      - '**/*.py'
+      - 'pyproject.toml'
+      - 'setup.cfg'
+      - 'setup.py'
+      - '.pre-commit-config.yaml'
+      - 'tests/**'
+      - '.github/workflows/ci-cd.yml'
     branches:
       - 'master'
       - '[0-9].[0-9]+'
