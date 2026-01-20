@@ -65,4 +65,4 @@ sources
 var/*
 venv
 virtualenv.py
-.worktrees
+.worktrees/
