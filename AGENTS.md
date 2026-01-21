@@ -12,5 +12,6 @@ All agents must follow these rules:
 6) Follow formatting/linting configured in pyproject.toml, setup.cfg, tox.ini, or ruff.toml.
 7) Update dependency lockfiles when adding or removing Python dependencies.
 8) Keep base image tags pinned.
+9) If the branch you're assigned to work on tracks a remote (ie origin/master or upstream/awesome-feature), you must `git fetch` and then update your local branch (eg `git pull --ff-only` or `git rebase`) so you're working from the latest remote state before you begin.
 
 Reference: https://www.conventionalcommits.org/en/v1.0.0/
